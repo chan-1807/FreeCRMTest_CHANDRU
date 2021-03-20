@@ -62,7 +62,7 @@ public class ContactsPageTest extends TestBase {
 	}
 	  
 	
-	  @Test(priority = 3,enabled = false,dataProvider = "getTestData") public void
+	  @Test(priority = 3,enabled = true,dataProvider = "getTestData") public void
 	  createContactTest(String title,String fn,String ln,String company) {
 	  homepage.clickOnNewContact(); 
 	  contactpage.createContact("Mr.", "Chandra", "Mohan", "C"); contactpage.createContact(title, fn, ln, company); }

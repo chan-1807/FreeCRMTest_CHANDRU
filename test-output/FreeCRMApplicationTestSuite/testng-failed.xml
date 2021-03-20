@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [FreeCRMApplicationTestSuite]">
+  <listeners>
+    <listener class-name="com.crm.util.ExternReports"/>
+  </listeners>
   <test thread-count="5" name="FreeCRMTest(failed)">
     <classes>
+      <class name="com.crm.testcases.ContactsPageTest">
+        <methods>
+          <include name="selectContactTest"/>
+          <include name="createContactTest"/>
+          <include name="setup"/>
+          <include name="teardwn"/>
+        </methods>
+      </class> <!-- com.crm.testcases.ContactsPageTest -->
       <class name="com.crm.testcases.LoginPageTest">
         <methods>
           <include name="loginPageTitleTest"/>
@@ -10,13 +21,6 @@
           <include name="setup"/>
         </methods>
       </class> <!-- com.crm.testcases.LoginPageTest -->
-      <class name="com.crm.testcases.ContactsPageTest">
-        <methods>
-          <include name="selectContactTest"/>
-          <include name="setup"/>
-          <include name="teardwn"/>
-        </methods>
-      </class> <!-- com.crm.testcases.ContactsPageTest -->
     </classes>
   </test> <!-- FreeCRMTest(failed) -->
 </suite> <!-- Failed suite [FreeCRMApplicationTestSuite] -->
