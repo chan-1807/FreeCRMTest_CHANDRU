@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="FreeCRMApplicationTestSuite">
+  <test thread-count="5" name="FreeCRMTest">
+    <classes>
+      <class name="com.crm.testcases.ContactsPageTest"/>
+      
+      <class name="com.crm.testcases.LoginPageTest"/>
+    </classes>
+  </test> <!-- FreeCRMTest -->
+</suite> <!-- FreeCRMApplicationTestSuite -->
