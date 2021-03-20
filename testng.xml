@@ -4,7 +4,7 @@
   <test thread-count="5" name="FreeCRMTest">
     <classes>
       <class name="com.crm.testcases.ContactsPageTest"/>
-      
+      <class name="com.crm.testcases.HomePageTest"/>
       <class name="com.crm.testcases.LoginPageTest"/>
     </classes>
   </test> <!-- FreeCRMTest -->
