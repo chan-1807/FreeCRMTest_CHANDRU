@@ -46,7 +46,7 @@ public class ContactsPageTest extends TestBase {
 	  Assert.assertTrue(contactpage.verifyContactsLabled()); }
 	  
 	  @Test(priority = 2,enabled = true) public void selectContactTest() {
-	  contactpage.selectContactsbyName("chan s"); }
+	  contactpage.selectContactsbyName("bmala t"); }
 	 
 
 	
